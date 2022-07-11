@@ -1,0 +1,29 @@
+Flight : 8z 111 FIH 4/19/2022 7:20:00 AM - GOM
+
+Aircraft : Airbus A320 ,  9S-ALU/14
+
+         1 22 ABIGAEL/DIYOYO PEMBA MRS                                      ETKT2925577 5822416931744 H   CK    FIH GOM
+00VMGU/8Z/8Z 2/22.00/11.00                                                            3582906804/3582906805
+20.00kg 33.00/33.00kg Exc 0kg   7F AD AD                                                    16 *  
+         2 78 ADHALA/ALINE  MRS                                             ETKT2925977 5822416931005 H   CK    FIH GOM
+00VMS6/8Z/8Z 2/10.00/4.00                                                              3582906872/3582906873
+20.00kg 33.00/33.00kg Exc 0kg   25B AD AD                                                   68 *   
+         3 22 ALLY KABIONA/THOM MR                                          ETKT2925510 5822416931722 H   CK    FIH GOM
+00VMNZ/8Z/8Z 2/25.00/22.00                                                            3582906855/3582906858
+20.00kg 47.00/27.00kg Exc 20kg   19F AD AD                                                  58
+                   GPRS                                                                                     2 PAX GROUPS
+         4 65 BAGULA/AIME  MR                                               ETKT2925577 5822416931783 H   CK    FIH GOM
+00VLKJ/8Z/8Z 1/20.00                                                                        3582906852
+20.00kg 20.00/20.00kg Exc 0kg   28F AD AD                                                    55*   
+         5 55 BAJHATI BUHENDWA/JORDAN  MR                                  ETKT2925577 5822416931779 H   CK    FIH GOM
+00VMMN/8Z/8Z 1/36.00                                                                     3582906842
+20.00kg 36.00/36.00kg Exc 0kg   20C AD AD                                                   48    
+         6 65 BILLY/MWAMBA  MR                                               ETKT2925577 5822416931783 H   CK    FIH GOM
+00VLKJ/8Z/8Z 1/20.00                                                                        3582906842
+20.00kg 20.00/20.00kg Exc 0kg   28F AD AD                                                    55*   
+         7 55 RUCHISA/POKO  MR                                  ETKT2925577 5822416931779 H   CK    FIH GOM
+00VMMN/8Z/8Z 1/36.00                                                                     3582906642
+20.00kg 36.00/36.00kg Exc 0kg   20C AD AD                                                   48    
+
+
+
