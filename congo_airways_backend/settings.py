@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-!r_mc&k9c#9!f7-_ez4+otvz9tx@bbz=huf!kqiwdudk7qntz#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://git.heroku.com/congoairwaysapi.git', 'localhost', '127.0.0.1']
 
 
 # Application definition
