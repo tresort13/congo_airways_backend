@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-!r_mc&k9c#9!f7-_ez4+otvz9tx@bbz=huf!kqiwdudk7qntz#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["congoairways.herokuapp.com/"]
 
 
 # Application definition
@@ -89,10 +89,10 @@ CORS_ALLOWED_ORIGINS = [
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'congo_airways_database',
-        'USER' : 'postgres',
-        'PASSWORD' : 'darkband12345',
-        'HOST' : 'localhost'
+        'NAME': 'dcshf2tapgpvhf',
+        'USER' : 'punbatdntfnqmo',
+        'PASSWORD' : 'ee7fbaa8a797b97bffde33e951386c2ed61169bc7e60dd51e1263c5ca1c8de86',
+        'HOST' : 'ec2-52-48-159-67.eu-west-1.compute.amazonaws.com'
     }
 }
 
