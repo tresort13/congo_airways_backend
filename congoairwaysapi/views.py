@@ -3,6 +3,8 @@ from email import message
 from functools import partial
 from ntpath import join
 from urllib import response
+
+from django.http import HttpResponse
 from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
@@ -47,6 +49,9 @@ class RegisterAPI(generics.GenericAPIView):
         "user": UserSerializer(user, context=self.get_serializer_context()).data,
         "token": AuthToken.objects.create(user)[1]
         })
+        
+def welcom(request):
+    return HttpResponse('WELCOM TO CONGO AIRWAYS API RESOURCES')
 
 class VolInformations(APIView):
       
