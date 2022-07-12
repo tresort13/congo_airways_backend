@@ -1,1 +1,1 @@
-web: gunicorn congo_airways_backend.wsgi --log-file - 
+web:  gunicorn  congo_airways_backend.wsgi 
