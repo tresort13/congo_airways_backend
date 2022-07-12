@@ -1,2 +1,2 @@
-web: gunicorn congo_airways_backend.wsgi:application --log-file -
-release: python manage.py migrate --noinput
+web: gunicorn gettingstarted.wsgi --log-file -
+
