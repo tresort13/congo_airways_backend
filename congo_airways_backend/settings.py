@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-!r_mc&k9c#9!f7-_ez4+otvz9tx@bbz=huf!kqiwdudk7qntz#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['congoairwaysapi.herokuapp.com']
+ALLOWED_HOSTS = ['https://congoairwaysapi.herokuapp.com']
 
 
 # Application definition
@@ -78,7 +78,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'congo_airways_backend.wsgi.application'
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
     "https://congoairways.herokuapp.com"
 ]
 
@@ -131,7 +130,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
