@@ -77,9 +77,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'congo_airways_backend.wsgi.application'
 
-CORS_ALLOWED_ORIGINS = [
-    "https://congoairways.herokuapp.com",
-]
+CORS_ALLOW_ALL_ORIGINS = True
 
 
 # Database
