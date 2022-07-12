@@ -89,10 +89,10 @@ CORS_ALLOWED_ORIGINS = [
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dcshf2tapgpvhf',
-        'USER' : 'punbatdntfnqmo',
-        'PASSWORD' : 'ee7fbaa8a797b97bffde33e951386c2ed61169bc7e60dd51e1263c5ca1c8de86',
-        'HOST' : 'ec2-52-48-159-67.eu-west-1.compute.amazonaws.com'
+        'NAME': 'd6nm5kveuade',
+        'USER' : 'kpyxwjsiymsdel',
+        'PASSWORD' : 'd51550bfc15437916ac4c778a075abe9e74e5fece3c7f6513dba91edae414ad7',
+        'HOST' : 'ec2-54-228-32-29.eu-west-1.compute.amazonaws.com'
     }
 }
 
