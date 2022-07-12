@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-!r_mc&k9c#9!f7-_ez4+otvz9tx@bbz=huf!kqiwdudk7qntz#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['congoairwaysapi.herukoapp.com']
+ALLOWED_HOSTS = ['congoairwaysapi2.herukoapp.com, congoairwaysapi.herukoapp.com']
 
 
 # Application definition
