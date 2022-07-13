@@ -34,7 +34,7 @@ class Passager_informations_vol(models.Model):
     
     
 class Bagage_informations_vol(models.Model):
-    numero_barcode_bagage = models.CharField(max_length=10,unique=True)
+    numero_barcode_bagage = models.CharField(max_length=13,unique=True)
     passenger_and_ticket_info = models.TextField(default="")
     pnr_and_bagage_info = models.TextField(default="")
     bagage_weight_info = models.TextField(default="")
