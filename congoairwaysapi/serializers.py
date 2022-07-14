@@ -30,7 +30,7 @@ class Bagage_informationsSerializer(serializers.ModelSerializer):
                   'ok_bagage_fin_tapis','ok_pied_avion','ok_bagage_embarquement_depart','ok_bagage_emplacement_south_A',
                   'ok_bagage_emplacement_south_B','ok_bagage_emplacement_south_C','ok_bagage_debarquement_depart','ok_bagage_debarquement_arrivee','ok_bagage_checker_depart','ok_bagage_checker_arriver',
                   'ok_bagage_en_tapis_livraison',
-                  'ok_bagage_livrer','kilos_bagage_tarmaque',
+                  'ok_bagage_livrer','ok_bagage_stocke_depart','ok_bagage_stocke_arrivee','kilos_bagage_tarmaque',
                   'date_heure_operation','date_operation','agent_id_save','vol_information','count_numero_barcode_bagage','count_ok_bagage_fin_tapis',
                   'count_ok_pied_avion','count_ok_bagage_embarquement_depart','count_ok_bagage_emplacement_south_A',
                   'count_ok_bagage_emplacement_south_B','count_ok_bagage_emplacement_south_C','count_ok_bagage_debarquement_depart',
