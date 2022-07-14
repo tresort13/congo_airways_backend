@@ -177,14 +177,14 @@ class UpdatePassagers(APIView):
         serializer = Passager_informationsSerializer(passager_informations_vol,data = {operation:operation,position:position,'vol_information':vol_info,'count_'+operation:1,'count_'+position:1},partial=True)
         if serializer.is_valid() :
             serializer.save()
-            return Response('barcode : '+str(barcodePassager)+ " scanné avec succès")
+            return Response("ok")
         return Response('veuillez selectionner votre position , vol ,type operation avant de scanner!! (au cas contraire veuillez enregistrer le barcode)')
     
     
 @api_view(['GET'])   
 def bagageAutoQuery(request,pk): 
        
-        barcodeBagage = int (pk)
+        barcodeBagage = pk
         bagage_informations_vol = Bagage_informations_vol.objects.get(numero_barcode_bagage = barcodeBagage)
         manifests = Manifest.objects.filter(date_envoie = bagage_informations_vol.date_operation)
         strutured_data = []
@@ -239,7 +239,7 @@ def bagageAutoQuery(request,pk):
 @api_view(['GET'])   
 def passagerAutoQuery(request,pk): 
     
-        barcodePassager = int (pk)
+        barcodePassager = pk
         passager_informations_vol = Passager_informations_vol.objects.get(numero_barcode_passager = barcodePassager)
         manifests = Manifest.objects.filter(date_envoie = passager_informations_vol.date_operation)
         strutured_data = []
