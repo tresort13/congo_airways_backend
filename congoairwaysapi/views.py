@@ -227,7 +227,7 @@ def bagageAutoQuery(request,pk):
                         
         
         try:
-          bagage_informations_vol = Bagage_informations_vol.objects.get(numero_barcode_bagage = pk)
+          bagage_informations_vol = Bagage_informations_vol.objects.filter(numero_barcode_bagage = pk)
         except bagage_informations_vol.DoesNotExist:
           return Response(status=status.HTTP_404_NOT_FOUND)
         
@@ -281,7 +281,7 @@ def passagerAutoQuery(request,pk):
                       
                         
               try:
-                passager_informations_vol = Passager_informations_vol.objects.get(numero_barcode_passager = pk)
+                passager_informations_vol = Passager_informations_vol.objects.filter(numero_barcode_passager = pk)
               except passager_informations_vol.DoesNotExist:
                 return Response(status=status.HTTP_404_NOT_FOUND)
         
