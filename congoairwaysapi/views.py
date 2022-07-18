@@ -184,8 +184,8 @@ class UpdatePassagers(APIView):
 @api_view(['GET'])   
 def bagageAutoQuery(request,pk): 
        
-        barcodeBagage = pk
-        bagage_informations_vol = Bagage_informations_vol.objects.int(numero_barcode_bagage = barcodeBagage)
+        barcodeBagage = int(pk)
+        bagage_informations_vol = Bagage_informations_vol.objects.get(numero_barcode_bagage = barcodeBagage)
         manifests = Manifest.objects.filter(date_envoie = bagage_informations_vol.date_operation)
         strutured_data = []
         digit = 0
@@ -227,7 +227,7 @@ def bagageAutoQuery(request,pk):
                         
         
         try:
-          bagage_informations_vol = Bagage_informations_vol.objects.int(numero_barcode_bagage = pk)
+          bagage_informations_vol = Bagage_informations_vol.objects.get(numero_barcode_bagage = barcodeBagage)
         except bagage_informations_vol.DoesNotExist:
           return Response(status=status.HTTP_404_NOT_FOUND)
         
@@ -239,8 +239,8 @@ def bagageAutoQuery(request,pk):
 @api_view(['GET'])   
 def passagerAutoQuery(request,pk): 
     
-        barcodePassager = pk
-        passager_informations_vol = Passager_informations_vol.objects.int(numero_barcode_passager = barcodePassager)
+        barcodePassager = int(pk)
+        passager_informations_vol = Passager_informations_vol.objects.get(numero_barcode_passager = barcodePassager)
         manifests = Manifest.objects.filter(date_envoie = passager_informations_vol.date_operation)
         strutured_data = []
         digit = 0
@@ -281,7 +281,7 @@ def passagerAutoQuery(request,pk):
                       
                         
               try:
-                passager_informations_vol = Passager_informations_vol.objects.int(numero_barcode_passager = pk)
+                passager_informations_vol = Passager_informations_vol.objects.get(numero_barcode_passager = barcodePassager)
               except passager_informations_vol.DoesNotExist:
                 return Response(status=status.HTTP_404_NOT_FOUND)
         
