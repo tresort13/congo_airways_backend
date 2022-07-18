@@ -185,7 +185,7 @@ class UpdatePassagers(APIView):
 def bagageAutoQuery(request,pk): 
        
         barcodeBagage = pk
-        bagage_informations_vol = Bagage_informations_vol.objects.get(numero_barcode_bagage = barcodeBagage)
+        bagage_informations_vol = Bagage_informations_vol.objects.filter(numero_barcode_bagage = barcodeBagage)
         manifests = Manifest.objects.filter(date_envoie = bagage_informations_vol.date_operation)
         strutured_data = []
         digit = 0
@@ -240,7 +240,7 @@ def bagageAutoQuery(request,pk):
 def passagerAutoQuery(request,pk): 
     
         barcodePassager = pk
-        passager_informations_vol = Passager_informations_vol.objects.get(numero_barcode_passager = barcodePassager)
+        passager_informations_vol = Passager_informations_vol.objects.filter(numero_barcode_passager = barcodePassager)
         manifests = Manifest.objects.filter(date_envoie = passager_informations_vol.date_operation)
         strutured_data = []
         digit = 0
